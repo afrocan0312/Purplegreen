@@ -1,0 +1,218 @@
+<html>
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .box1{
+        border:3px solid red;
+        background-color:pink;
+        padding:30 0 30 0px;
+      }
+      .boxA:after{
+        content:"여기빈공간가상의공간";
+        display:block;
+        clear:both;
+      }
+      .box2{
+        border:1px solid black;
+        background-color:gray;
+        float:left;
+        padding:30 0 30 0px;
+        width:33.1%;
+
+      }
+      .box3{
+        border:1px solid black;
+        padding:30 0 30 0px;
+        background-color:gray;
+        float:left;
+        width:33.1%;
+      }
+      .box4{
+        float:left;
+        border:1px solid red;
+        background-color:pink;
+        padding:30 0 30 0px;
+        width:33.1%;
+      }
+      .boxB:after{
+        border:1px solid black;
+        content:"";
+        display:block;
+        clear:both;
+      }
+      .box5{
+        border:1px solid black;
+        float:left;
+        padding:30 0 30 0px;
+        background-color:red;
+      }
+      .box6{
+        border:1px solid black;
+        float:right;
+        padding:30 0 30 0px;
+        background-color:red;
+      }
+
+      }
+      .boxC:after{
+        content:"";
+        display:block;
+        clear:both;
+      }
+      .box7{
+        border:1px solid black;
+        background-color:gray;
+        float:left;
+        padding:30 0 30 0px;
+        width:100px;
+
+      }
+      .box8{
+        border:1px solid black;
+        padding:30 0 30 0px;
+        background-color:gray;
+        float:none;
+        width:auto;
+      }
+
+      *{
+          box-sizing:border-box;
+      }
+
+      .A1{
+        border:5px solid pink;
+        height:100px;
+        text-align:center;
+        vertical-align: middle;
+        padding:35px;
+      }
+      .A2{
+        border:5px solid purple;
+        height:100px;
+        text-align:center;
+        vertical-align: middle;
+        padding:35px;
+      }
+      .A3{
+        border:5px solid blue;
+        height:100px;
+        text-align:center;
+        vertical-align: middle;
+        padding:35px;
+      }
+      .A4{
+        border:5px solid green;
+        height:100px;
+        text-align:center;
+        vertical-align: middle;
+        padding:35px;
+      }
+
+      @media(min-width:800px){
+
+        .BoxD:after{
+          content:"";
+          display:block;
+          clear:both;
+        }
+
+        .A4{
+          border:5px solid green;
+          height:100px;
+          text-align:center;
+          vertical-align: middle;
+          padding:35px;
+          float:left;
+          width: 20%;
+          height:500px;
+        }
+        .BoxE{
+          float:left;
+          width: 80%;
+        }
+        .A2{
+          border:5px solid purple;
+          height:100px;
+          text-align:center;
+          vertical-align: middle;
+          padding:35px;
+          float:right;
+          width:75%;
+          height:500px;
+        }
+        .A3{
+          border:5px solid blue;
+          height:100px;
+          text-align:center;
+          vertical-align: middle;
+          padding:35px;
+          height:500px;
+          width:25%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+<div class="box1">
+box 1
+</div>
+
+<div class="boxA">
+  <div class="box2">
+    box 2
+  </div>
+
+  <div class="box3">
+  box 3
+  </div>
+
+<div class="box4">
+box 4
+</div>
+</div>
+
+<div class="boxB">
+<div class="box5">
+box 5
+</div>
+
+<div class="box6">
+box 6
+</div>
+<!--<div style="clear:both"></div> 이것도 같은기능 but 태그를 따로 입력해야하는 불편함땜시 위에것 쓰는것임-->
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="boxC">
+<!-- 박스7만 고정하고 8은 오토-->
+  <div class="box7">
+  box 7
+  </div>
+
+  <div class="box8">
+  box 8
+  </div>
+</div>
+
+<!--반응형 실습-->
+반응형 실습
+<p>플롯기능을 중첩시켜서 3,2자리를 바꿈. 서로바꿀 두 박스를 그룹하고, 4번고정되어있는 영역을뺀 나머지 퍼센트로 키운다</p>
+<p>그 후 각 박스 따로따로 가운데놓을 박스는 플로트 right정렬하는데 width값은 위 그룹에서 퍼센트를 매긴 영역을 100으로 생각하게된다.</p>
+  <div class="A1">1</div>
+<div class="BoxD">
+    <div class="BoxE">
+      <div class="A2">2</div>
+      <div class="A3">3</div>
+    </div>
+  <div class="A4">4</div>
+</div>
+
+
+  </body>
+</html>
