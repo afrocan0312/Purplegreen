@@ -1,0 +1,223 @@
+<!DOCTYPE html5>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600');
+*{
+  box-sizing: border-box;
+}
+      body{
+              background-color: #f8f8f8;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 30px;
+        font-weight:400;
+        margin-left: 30px;
+        margin-right: 50px;
+
+        }
+
+      section{
+
+
+      }
+      header{
+float: left;
+width: 300px;
+margin: 0px 10px 0px 260px;
+        }
+      nav{
+        padding-bottom: 60px;
+        margin-right: 250px;
+        margin-top: 60px;
+      }
+      header{
+        font-weight:600;
+      }
+
+      ul{
+        display:flex;
+        justify-content: flex-end;
+
+        font-size: 15px;
+        list-style-type: none;
+      }
+      li{
+
+    display:inline-block;
+    margin: 15px;
+      }
+      a{
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all ease-in-out 1s;
+      }
+      li:hover > a {
+       color: #FFA07A ;
+       border-color:#FFA07A;
+       transition: all ease-in-out 0.5s;
+       -webkit-transition: color 0.5s; /* For Safari 3.0 to 6.0 */
+
+
+
+      }
+
+      main{
+
+      }
+      span{
+
+      }
+
+.containerA{
+  display: grid;
+  grid-template-columns: repeat(7,250px);
+  grid-template-rows: 30px 1fr 30px 1fr 30px 1fr 1fr;
+  max-width:100%;
+  height: 100%;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  font-size: 14px;
+
+  grid-template-areas:
+  ". tex1 tex2 tex2 tex3 tex3 ."
+  ". first second second third third ."
+  ". tex4 second second tex6 tex6 ."
+  ". fourth second second sixth sixth ."
+  ". tex5 tex5 tex7 sixth sixth ."
+  ". fifth fifth seventh sixth sixth ."
+  ". fifth fifth seventh sixth sixth ."
+}
+
+.textA{
+    border-top: 2px solid gray;
+    grid-area: tex1;
+    padding-top: 7px;
+}
+.textB{
+    border-top: 2px solid gray;
+    grid-area: tex2;
+    padding-top: 7px;
+}
+.textC{
+    border-top: 2px solid gray;
+    grid-area: tex3;
+    padding-top: 7px;
+}
+.textD{
+    border-top: 2px solid gray;
+    grid-area: tex4;
+    padding-top: 7px;
+}
+.textE{
+    border-top: 2px solid gray;
+    grid-area: tex5;
+    padding-top: 7px;
+}
+.textF{
+    border-top: 2px solid gray;
+    grid-area: tex6;
+    padding-top: 7px;
+}
+.textG{
+    border-top: 2px solid gray;
+    grid-area: tex7;
+    padding-top: 7px;
+}
+      .content1{
+
+
+        grid-area: first;
+        background-image: url(Untitled-3_1.png);
+        background-size: 100%;
+
+      }
+
+      .content2{
+        grid-area: second;
+        background-image: url(Untitled-3_1.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          /* background-position: center; */
+      }
+      .content3{
+        grid-area: third;
+        background-image: url(Untitled-3_1.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+      }
+      }
+      .content4{
+        grid-area: fourth;
+      }
+      .content5{
+        grid-area: fifth;
+      }
+      .content6{
+        grid-area: sixth;
+      }
+      .content7{
+        grid-area: seventh;
+      }
+
+    </style>
+  </head>
+  <body>
+
+<section>
+  <header>
+  Ariella, Kim
+  </header>
+<nav>
+  <ul>
+    <li><a href="case_study.html">Work</a></li>
+    <li><a href="case_study.html">About</a></li>
+    <li><a href="case_study.html">News</a></li>
+    <li><a href="case_study.html">Contact</a></li>
+  </ul>
+</nav>
+<main>
+  <div class= "containerA">
+
+        <span class="textA">'Duve' lowpoly illust</span>
+    <div class="content1">
+    <!-- <img style="width:300px;height: 300px;" src="Untitled-3_1.png"></div> -->
+    </div>
+
+        <span class="textB">'Trample it up!' illust</span>
+    <div class="content2">
+    <!-- <img style="width:600px;height: 600px;" src="Untitled-3_1.png"> -->
+    </div>
+
+      <span class="textC">'NCW' VR Project</span>
+    <div class="content3">
+    <!-- <img style="width:600px;height: 600px;" src="Untitled-3_1.png"> -->
+    </div>
+
+    <span class="textD">'Mercy' Overwatch Fan art</span>
+    <div class="content4">
+    </div>
+
+    <span class="textE">Unity film project</span>
+    <div class="content5">
+    </div>
+
+    <span class="textF">VR Ball Game Project</span>
+    <div class="content6">
+    </div>
+
+    <span class="textG">'Flip side' single project</span>
+    <div class="content7">
+    </div>
+
+
+</main>
+<aside>
+
+</aside>
+
+</section>
+  </body>
+</html>
