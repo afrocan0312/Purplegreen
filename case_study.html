@@ -27,8 +27,8 @@
         width: 70px;
         height: 70px;
         margin: 0px 10px 0px 265px;
-          background-image: url("img/logo.png");
-          background-size: 100%;
+        background-image: url("img/logo.png");
+        background-size: 100%;
       }
       header{
         float: left;
@@ -137,7 +137,24 @@
         background: url("img/1_duve.png");
         background-size: 100%;
       }
-
+      .curtain1{
+        background: linear-gradient( rgba(241, 235, 235, 1),
+      rgba(241, 235, 235, 1));
+      width:250px;
+      height: 178.25px;
+      opacity:0;
+      transition: .5s ease
+      }
+      .curtain1:hover{
+        opacity:0.5;
+      }
+      .curtaintex1{
+        text-align: center;
+        font-weight:600;
+        font-size:20px;
+        color:red;
+        padding: 70px 100px 100px 100px;
+      }
       .content2{
         grid-area: second;
         background: url("img/2_neon.png");
@@ -226,7 +243,7 @@
       grid-area: first;
         background: url("media_q/1_duve.png");
         background-size: 100%;
-        transition: .5s ease;
+        /* transition: .5s ease; */
       }
       .curtain1{
         background: linear-gradient( rgba(241, 235, 235, 1),
@@ -287,7 +304,7 @@
 <section>
   <div class="logoimg"></div>
   <header>
-  Ariella, Kim
+  <a href="case_study.html">Ariella, Kim</a>
   </header>
 <nav>
   <ul>
@@ -332,7 +349,7 @@
     <div class="content6">
     </div>
 
-    <span class="textG">'Flip side' single game project</span>
+    <span class="textG">'Flip side' single game</span>
     <div class="content7">
     </div>
 
